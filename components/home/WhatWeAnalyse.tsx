@@ -82,8 +82,6 @@ export function WhatWeAnalyse() {
                 transition: 'background-color 0.2s',
                 cursor: 'default',
               }}
-              onMouseEnter={e => (e.currentTarget.style.backgroundColor = 'var(--color-surface-2)')}
-              onMouseLeave={e => (e.currentTarget.style.backgroundColor = 'var(--color-surface)')}
             >
               <span style={{
                 fontSize: 'var(--text-sm)',

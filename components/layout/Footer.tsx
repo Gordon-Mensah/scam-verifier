@@ -71,8 +71,6 @@ export function Footer() {
                   textDecoration: 'none',
                   transition: `color var(--duration-base) var(--ease-out)`,
                 }}
-                onMouseEnter={e => ((e.target as HTMLElement).style.color = 'var(--color-text-primary)')}
-                onMouseLeave={e => ((e.target as HTMLElement).style.color = 'var(--color-text-secondary)')}
               >
                 Analyse
               </Link>
@@ -84,8 +82,6 @@ export function Footer() {
                   textDecoration: 'none',
                   transition: `color var(--duration-base) var(--ease-out)`,
                 }}
-                onMouseEnter={e => ((e.target as HTMLElement).style.color = 'var(--color-text-primary)')}
-                onMouseLeave={e => ((e.target as HTMLElement).style.color = 'var(--color-text-secondary)')}
               >
                 Pricing
               </Link>
@@ -97,8 +93,6 @@ export function Footer() {
                   textDecoration: 'none',
                   transition: `color var(--duration-base) var(--ease-out)`,
                 }}
-                onMouseEnter={e => ((e.target as HTMLElement).style.color = 'var(--color-text-primary)')}
-                onMouseLeave={e => ((e.target as HTMLElement).style.color = 'var(--color-text-secondary)')}
               >
                 Contact
               </a>

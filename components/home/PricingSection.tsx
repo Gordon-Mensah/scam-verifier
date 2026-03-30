@@ -153,18 +153,8 @@ export function PricingSection() {
             borderRadius: 'var(--radius-md)',
             transition: 'all 0.2s var(--ease-out)',
             letterSpacing: '-0.01em',
-          }}
-          onMouseEnter={e => {
-            e.currentTarget.style.backgroundColor = '#ffc030'
-            e.currentTarget.style.transform = 'translateY(-1px)'
-            e.currentTarget.style.boxShadow = '0 8px 30px rgba(240,165,0,0.3)'
-          }}
-          onMouseLeave={e => {
-            e.currentTarget.style.backgroundColor = 'var(--color-accent)'
-            e.currentTarget.style.transform = 'translateY(0)'
-            e.currentTarget.style.boxShadow = 'none'
-          }}
-          >
+          }}>
+
             Get Started Free
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M3 8H13M8 3L13 8L8 13" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/>

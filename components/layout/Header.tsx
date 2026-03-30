@@ -73,22 +73,16 @@ export function Header() {
 
         {/* Nav */}
         <nav style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-6)' }}>
-          <Link href="/#how-it-works" style={{ fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--color-text-muted)', textDecoration: 'none', transition: 'color 0.2s' }}
-            onMouseEnter={e => (e.currentTarget.style.color = 'var(--color-text-secondary)')}
-            onMouseLeave={e => (e.currentTarget.style.color = 'var(--color-text-muted)')}>
+          <Link href="/#how-it-works" style={{ fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--color-text-muted)', textDecoration: 'none', transition: 'color 0.2s' }}>
             How It Works
           </Link>
 
           {loaded && !user && (
             <>
-              <Link href="/sign-in" style={{ fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--color-text-secondary)', textDecoration: 'none', transition: 'color 0.2s' }}
-                onMouseEnter={e => (e.currentTarget.style.color = 'var(--color-text-primary)')}
-                onMouseLeave={e => (e.currentTarget.style.color = 'var(--color-text-secondary)')}>
+              <Link href="/sign-in" style={{ fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--color-text-secondary)', textDecoration: 'none', transition: 'color 0.2s' }}>
                 Sign In
               </Link>
-              <Link href="/sign-up" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '9px 20px', backgroundColor: 'var(--color-accent)', color: '#080b10', fontFamily: 'var(--font-display)', fontSize: 'var(--text-sm)', fontWeight: 700, textDecoration: 'none', borderRadius: 'var(--radius-md)', transition: 'all 0.2s var(--ease-out)' }}
-                onMouseEnter={e => { e.currentTarget.style.backgroundColor = '#ffc030'; e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(240,165,0,0.3)' }}
-                onMouseLeave={e => { e.currentTarget.style.backgroundColor = 'var(--color-accent)'; e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none' }}>
+              <Link href="/sign-up" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '9px 20px', backgroundColor: 'var(--color-accent)', color: '#080b10', fontFamily: 'var(--font-display)', fontSize: 'var(--text-sm)', fontWeight: 700, textDecoration: 'none', borderRadius: 'var(--radius-md)', transition: 'all 0.2s var(--ease-out)' }}>
                 Sign Up Free
               </Link>
             </>
@@ -96,17 +90,13 @@ export function Header() {
 
           {loaded && user && (
             <>
-              <Link href="/analyse" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '9px 20px', backgroundColor: 'var(--color-accent)', color: '#080b10', fontFamily: 'var(--font-display)', fontSize: 'var(--text-sm)', fontWeight: 700, textDecoration: 'none', borderRadius: 'var(--radius-md)', transition: 'all 0.2s var(--ease-out)' }}
-                onMouseEnter={e => { e.currentTarget.style.backgroundColor = '#ffc030'; e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(240,165,0,0.3)' }}
-                onMouseLeave={e => { e.currentTarget.style.backgroundColor = 'var(--color-accent)'; e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none' }}>
+              <Link href="/analyse" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '9px 20px', backgroundColor: 'var(--color-accent)', color: '#080b10', fontFamily: 'var(--font-display)', fontSize: 'var(--text-sm)', fontWeight: 700, textDecoration: 'none', borderRadius: 'var(--radius-md)', transition: 'all 0.2s var(--ease-out)' }}>
                 Run Analysis
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                   <path d="M2.5 6H9.5M6.5 3L9.5 6L6.5 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
                 </svg>
               </Link>
-              <button onClick={handleSignOut} style={{ fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--color-text-muted)', background: 'none', border: 'none', cursor: 'pointer', transition: 'color 0.2s' }}
-                onMouseEnter={e => (e.currentTarget.style.color = 'var(--color-text-secondary)')}
-                onMouseLeave={e => (e.currentTarget.style.color = 'var(--color-text-muted)')}>
+              <button onClick={handleSignOut} style={{ fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--color-text-muted)', background: 'none', border: 'none', cursor: 'pointer', transition: 'color 0.2s' }}>
                 Sign Out
               </button>
             </>

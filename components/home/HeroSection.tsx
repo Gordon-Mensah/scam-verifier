@@ -85,22 +85,17 @@ export function HeroSection() {
           {loaded && !user && (
             <>
               <Link href="/sign-up" style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', padding: '14px 32px', backgroundColor: 'var(--color-accent)', color: '#080b10', fontFamily: 'var(--font-display)', fontSize: 'var(--text-md)', fontWeight: 700, textDecoration: 'none', borderRadius: 'var(--radius-md)', transition: 'all 0.2s var(--ease-out)' }}
-                onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 8px 30px rgba(240,165,0,0.35)'; e.currentTarget.style.backgroundColor = '#ffc030' }}
-                onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.backgroundColor = 'var(--color-accent)' }}>
+              >
                 Get Started Free
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M8 3L13 8L8 13" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/></svg>
               </Link>
-              <Link href="/sign-in" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '14px 24px', border: '1px solid var(--color-border)', color: 'var(--color-text-secondary)', fontFamily: 'var(--font-mono)', fontSize: 'var(--text-sm)', letterSpacing: '0.05em', textDecoration: 'none', borderRadius: 'var(--radius-md)', transition: 'all 0.2s', backgroundColor: 'transparent' }}
-                onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--color-border-hover)'; e.currentTarget.style.color = 'var(--color-text-primary)' }}
-                onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-border)'; e.currentTarget.style.color = 'var(--color-text-secondary)' }}>
+              <Link href="/sign-in" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '14px 24px', border: '1px solid var(--color-border)', color: 'var(--color-text-secondary)', fontFamily: 'var(--font-mono)', fontSize: 'var(--text-sm)', letterSpacing: '0.05em', textDecoration: 'none', borderRadius: 'var(--radius-md)', transition: 'all 0.2s', backgroundColor: 'transparent' }}>
                 Sign In
               </Link>
             </>
           )}
           {loaded && user && (
-            <Link href="/analyse" style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', padding: '14px 32px', backgroundColor: 'var(--color-accent)', color: '#080b10', fontFamily: 'var(--font-display)', fontSize: 'var(--text-md)', fontWeight: 700, textDecoration: 'none', borderRadius: 'var(--radius-md)', transition: 'all 0.2s var(--ease-out)' }}
-              onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 8px 30px rgba(240,165,0,0.35)'; e.currentTarget.style.backgroundColor = '#ffc030' }}
-              onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.backgroundColor = 'var(--color-accent)' }}>
+            <Link href="/analyse" style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', padding: '14px 32px', backgroundColor: 'var(--color-accent)', color: '#080b10', fontFamily: 'var(--font-display)', fontSize: 'var(--text-md)', fontWeight: 700, textDecoration: 'none', borderRadius: 'var(--radius-md)', transition: 'all 0.2s var(--ease-out)' }}>
               Analyse an Opportunity
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M8 3L13 8L8 13" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/></svg>
             </Link>
