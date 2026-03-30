@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'ScamVerifier — Free AI Fraud Intelligence',
   description:
     'Paste any opportunity, pitch, or suspicious offer and get a free AI-powered legitimacy report in under 60 seconds.',
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://scamverifier.onrender.com'),
   openGraph: {
     title: 'ScamVerifier — Free AI Fraud Intelligence',
     description: "Know if it's a scam before you commit. Free AI analysis of any opportunity, pitch, or offer.",
