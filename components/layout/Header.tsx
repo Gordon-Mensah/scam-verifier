@@ -119,7 +119,6 @@ export function Header() {
                 </svg>
               </Link>
               <UserButton
-                SignOutUrl="/"
                 appearance={{
                   variables: { colorPrimary: '#f0a500' },
                   elements: {
